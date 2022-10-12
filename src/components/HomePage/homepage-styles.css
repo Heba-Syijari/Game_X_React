@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+
+.home-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Alfa Slab One", cursive;
+  min-height: 90vh;
+  flex-direction: column;
+  gap: 52px;
+  background-image: url(/public/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.home-page h2 {
+  font-family: revert;
+  color: rgb(232, 79, 113);
+  font-size: 60px;
+  -webkit-text-stroke: 1px rgb(133, 0, 32);
+  position: relative;
+  z-index: 1;
+  animation: animate 1s infinite alternate ease-in-out;
+}
+
+.home-page h2::before {
+  content: "play with us";
+  font-family: revert;
+  color: rgb(227, 40, 91);
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 100%;
+  font-size: 60px;
+  -webkit-text-stroke: 1px rgb(133, 0, 32);
+  z-index: -1;
+}
+
+@keyframes animate {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.03);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(1turn);
+  }
+}
